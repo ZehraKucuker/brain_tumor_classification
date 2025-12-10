@@ -5,7 +5,6 @@ MRI görüntülerinden beyin tümörü tespiti ve sınıflandırması için Visi
 ![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7-red.svg)
 ![Accuracy](https://img.shields.io/badge/Accuracy-99.87%25-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 📋 İçindekiler
 
@@ -258,18 +257,3 @@ torch
 torchvision
 timm
 ```
-
-## 🙏 Teşekkürler
-
-- [timm](https://github.com/huggingface/pytorch-image-models) - PyTorch Image Models
-- [Vision Transformer](https://arxiv.org/abs/2010.11929) - An Image is Worth 16x16 Words
-
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
----
-
-<p align="center">
-  Made with ❤️ for Medical AI
-</p>
