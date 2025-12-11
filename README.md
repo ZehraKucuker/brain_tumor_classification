@@ -95,41 +95,7 @@ pip install timm
 
 ## 💻 Kullanım
 
-### 1. Veriseti Analizi
-
-Verisetinin istatistiklerini ve dağılımını görmek için:
-
-```bash
-python dataset_analysis.py
-```
-
-Bu script:
-- Her sınıftaki görüntü sayısını
-- Görüntü boyutlarını
-- Piksel değer dağılımlarını
-- Sınıf dağılım grafiklerini oluşturur
-
-### 2. Görüntü Ön İşleme
-
-Tüm görüntülere ön işleme uygulamak için:
-
-```bash
-python preprocessing.py
-```
-
-Uygulanan ön işlemler:
-- Siyah kenar kırpma
-- Bilateral filtre (gürültü giderme)
-- CLAHE (kontrast artırma)
-- 224x224 boyutlandırma
-
-### 3. Model Eğitimi
-
-Vision Transformer modelini eğitmek için:
-
-```bash
-python train_vit.py
-```
+*Güncellencek*
 
 Eğitim parametreleri `train_vit.py` içindeki `CONFIG` sözlüğünden ayarlanabilir:
 
