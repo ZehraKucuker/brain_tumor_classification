@@ -95,9 +95,44 @@ pip install timm
 
 ## 💻 Kullanım
 
-*Güncellenecek.*
+<<<<<<< HEAD
+### Jupyter Notebook
 
-Eğitim parametreleri `train_vit.py` içindeki `CONFIG` sözlüğünden ayarlanabilir:
+Tüm proje kodları tek bir interaktif notebook dosyasında birleştirilmiştir:
+
+```bash
+jupyter notebook brain_tumor_classification.ipynb
+```
+
+Veya VS Code'da direkt açabilirsiniz.
+
+### Notebook İçeriği
+
+**1. Veriseti Analizi**
+- Her sınıftaki görüntü sayısı
+- Görüntü boyutları ve istatistikleri
+- Piksel değer dağılımları
+- Sınıf dağılım grafikleri
+
+**2. Görüntü Ön İşleme**
+- Siyah kenar kırpma
+- Bilateral filtre (gürültü giderme)
+- CLAHE (kontrast artırma)
+- 224x224 boyutlandırma
+
+**3. Model Eğitimi**
+- Vision Transformer (ViT-Small) modeli
+- Transfer learning ile eğitim
+- Data augmentation
+
+**4. Model Değerlendirme**
+- Confusion Matrix
+- ROC eğrileri
+- Sınıflandırma raporu
+
+### Konfigürasyon
+
+Notebook içindeki `CONFIG` sözlüğünden parametreler ayarlanabilir:
 
 ```python
 CONFIG = {
@@ -141,60 +176,44 @@ Vision Transformer (ViT-Small)
 
 | Sınıf | Precision | Recall | F1-Score | ROC-AUC |
 |-------|-----------|--------|----------|---------|
-| Glioma | 1.0000 | 0.9975 | 0.9987 | 1.0000 |
+| Glioma | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
 | Healthy | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
 | Meningioma | 0.9947 | 1.0000 | 0.9973 | 1.0000 |
-| Pituitary | 1.0000 | 0.9975 | 0.9987 | 1.0000 |
+| Pituitary | 1.0000 | 0.9949 | 0.9975 | 1.0000 |
 
-### Eğitim Grafikleri
+### Görselleştirmeler
 
-![Eğitim Geçmişi](training_history.png)
-
-### Karmaşıklık Matrisi
-
-![Confusion Matrix](confusion_matrix.png)
-
-### ROC Eğrisi
-
-![ROC Curve](roc_curve.png)
+Tüm grafikler (eğitim geçmişi, confusion matrix, ROC eğrileri) notebook içinde inline olarak görüntülenmektedir.
 
 ## 📂 Proje Yapısı
 
 ```
 brain_tumor_classification/
 │
-├── dataset/                    # Orijinal veriseti
+├── dataset/                          # Orijinal veriseti
 │   ├── glioma/
 │   ├── healthy/
 │   ├── meningioma/
 │   └── pituitary/
 │
-├── dataset_processed/          # İşlenmiş veriseti
+├── dataset_processed/                # İşlenmiş veriseti (224x224)
 │   ├── glioma/
 │   ├── healthy/
 │   ├── meningioma/
 │   └── pituitary/
 │
-├── .venv/                      # Python sanal ortamı
+├── .venv/                            # Python sanal ortamı
 │
-├── dataset_analysis.py         # Veriseti analiz scripti
-├── preprocessing.py            # Görüntü ön işleme scripti
-├── train_vit.py                # Model eğitim scripti
-├── requirements.txt            # Python bağımlılıkları
-├── best_model.pth              # Eğitilmiş model ağırlıkları
+├── brain_tumor_classification.ipynb  # Ana notebook (tüm kodlar)
+├── requirements.txt                  # Python bağımlılıkları
+├── best_model.pth                    # Eğitilmiş model ağırlıkları
 │
-├── dataset_analysis.png        # Veriseti analiz grafikleri
-├── training_history.png        # Eğitim geçmişi grafikleri
-├── confusion_matrix.png        # Karmaşıklık matrisi
-├── confusion_matrix_normalized.png
-├── roc_curve.png               # ROC eğrisi
-│
-└── README.md                   # Bu dosya
+└── README.md                         # Bu dosya
 ```
 
 ## 🔧 Konfigürasyon
 
-`train_vit.py` içindeki ana konfigürasyon parametreleri:
+Notebook içindeki ana konfigürasyon parametreleri:
 
 | Parametre | Varsayılan | Açıklama |
 |-----------|------------|----------|

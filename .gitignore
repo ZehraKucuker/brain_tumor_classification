@@ -1,1 +1,9 @@
 /.history
+.venv/
+dataset/
+dataset_processed/
+__pycache__/
+*.pyc
+Proje_Raporu.md
+Proje_Raporu.docx
+create_word_report.py
