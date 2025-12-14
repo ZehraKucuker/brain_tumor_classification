@@ -10,7 +10,7 @@ MRI görüntülerinden beyin tümörü tespiti ve sınıflandırması için Visi
 
 - [Proje Hakkında](#-proje-hakkında)
 - [Özellikler](#-özellikler)
-- [Veriseti](#-veriseti)
+- [Veri Seti](#-veri-seti)
 - [Kurulum](#-kurulum)
 - [Kullanım](#-kullanım)
 - [Model Mimarisi](#️-model-mimarisi)
@@ -44,7 +44,23 @@ Bu proje, MRI beyin görüntülerinden tümör tespiti ve sınıflandırması ya
   - Karmaşıklık matrisi
   - ROC eğrisi ve AUC skorları
 
-## 📁 Veriseti
+## 📁 Veri Seti
+
+### 📥 Veri Setini İndirin
+
+Bu projede kullanılan ham (ön işlenmemiş) veri seti Kaggle'da paylaşılmıştır. Aşağıdaki linkten kolayca indirebilirsiniz:
+
+<p align="center">
+  <a href="https://www.kaggle.com/datasets/zehrakucuker/brain-tumor-mri-images-classification-dataset" target="_blank">
+    <img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle Dataset"/>
+  </a>
+</p>
+
+🔗 **[Brain Tumor MRI Images Classification Dataset](https://www.kaggle.com/datasets/zehrakucuker/brain-tumor-mri-images-classification-dataset)**
+
+> 💡 **Not:** Bu veri seti, 3 farklı Kaggle veri setinin birleştirilmesiyle oluşturulmuştur.
+
+### 📊 Veri Seti İstatistikleri
 
 | Sınıf | Görüntü Sayısı | Oran |
 |-------|----------------|------|
@@ -95,7 +111,6 @@ pip install timm
 
 ## 💻 Kullanım
 
-<<<<<<< HEAD
 ### Jupyter Notebook
 
 Tüm proje kodları tek bir interaktif notebook dosyasında birleştirilmiştir:
